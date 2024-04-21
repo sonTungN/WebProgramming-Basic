@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #A9C9FF;
+    background-image: linear-gradient(to bottom right, #e1ead7 20%, #f3ebdc 80%);
+}
+
+#calculator {
+    width: 80%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #B0E9CE;
+}
+
+#input_screen {
+    position: relative;
+    width: calc(100%);
+    padding: 0 5px;
+    margin-bottom: 20px;
+    background-color: #F2EBDC;
+    border-radius: 10px;
+    text-align: right;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+#input {
+    height: 8rem;
+    line-height: 5rem;
+    margin-right: 5px;
+    font-size: 2rem;
+}
+
+#tmp {
+    position: absolute;
+    right: 15px;
+    top: 0.25rem;
+}
+
+#buttons {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#buttons > button {
+    width: calc(25% - 4px);
+    text-align: center;
+    line-height: 5rem;
+    margin: 2px 0;
+    border-radius: 4px;
+    color: black;
+    background-color: #F2EBDC;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#buttons > #equal {
+    width: calc(50% - 4px);
+}
+
+#buttons > button:hover {
+    background-color: #E2DCCD;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#buttons > button:active {
+    background-color: #C9BDB0;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    margin: 20px 0;
+}
+
+footer > a {
+    text-decoration: none;
+}

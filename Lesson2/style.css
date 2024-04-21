@@ -1,0 +1,18 @@
+body {
+    background-color: #008888;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+div {
+    display: inline-block;
+    width: 450px;
+    margin-top: 70px;
+    border-radius: 20px;
+    box-shadow: 6px 5px rgb(0, 0, 0, 0.16);
+    background-color: white;
+}
+
+h1 {
+    font-weight: 600;
+}
