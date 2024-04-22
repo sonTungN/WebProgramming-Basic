@@ -2,41 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="registerPane.css">
+    <link rel="stylesheet" href="splitScreen.css">
     <title>Register Page</title>
 </head>
 <body>
-    <div class="container">
-        <h1>REGISTRATION FORM</h1>
+    <div class="split left">
+        <div class="container">
+            <h1>REGISTRATION</h1>
+            <hr>
 
-        <div class="switch"></div>
-        <hr>
-        <div class="register_pane">
             <form>
-<!--                <label for="first_name">First Name</label>-->
+                <!--                <label for="first_name">First Name</label>-->
                 <input type="text" id="first_name" name="first_name" placeholder="Enter your first name">
 
-<!--                <label for="last_name">Last Name</label>-->
+                <!--                <label for="last_name">Last Name</label>-->
                 <input type="text" id="last_name" name="last_name" placeholder="Enter your last name">
 
-<!--                <label for="email"></label>Email-->
+                <!--                <label for="email"></label>Email-->
                 <input type="email" id="email" name="email" placeholder="Email"
                        pattern="^0[0-9]{9}$" required>
 
-<!--                <label for="phone"></label>Phone Number-->
+                <!--                <label for="phone"></label>Phone Number-->
                 <input type="tel" id="phone" name="phone" placeholder="012-345-6789"
                        pattern="^0[0-9]{9}$" required>
 
-<!--                <label for="pwd">Password</label>-->
+                <!--                <label for="pwd">Password</label>-->
                 <input type="password" id="pwd" name="pwd" placeholder="Enter password"
                        pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{5,15}$" required>
                 <!--                5 < length < 15, at least 1 cap 1 num, no special-->
 
-<!--                <label for="repeat_pwd">Repeat password</label>-->
+                <!--                <label for="repeat_pwd">Repeat password</label>-->
                 <input type="password" id="repeat_pwd" placeholder="Re-enter password"
                        pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{5,15}$" required>
             </form>
         </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered"></div>
     </div>
 </body>
 </html>
