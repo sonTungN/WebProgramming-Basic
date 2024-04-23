@@ -9,7 +9,6 @@
     <title>Title</title>
 </head>
 <body>
-    <div class="background"></div>
     <div id="container">
         <h1>SIGN UP</h1>
         <hr>
@@ -19,10 +18,9 @@
 
             <input type="text" id="last_name" name="last_name" placeholder="Last Name">
 
-            <input type="email" id="email" name="email" placeholder="Email"
-                   required>
-
             <input type="tel" id="phone" name="phone" placeholder="Phone number" pattern="^0[0-9]{9}$" required>
+
+            <input type="email" id="email" name="email" placeholder="Email" required>
 
             <input type="password" id="pwd" name="pwd" placeholder="Enter password" pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{5,15}$" required>
             <!--                5 < length < 15, at least 1 cap 1 num, no special-->
