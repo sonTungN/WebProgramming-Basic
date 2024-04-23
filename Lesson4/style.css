@@ -46,6 +46,10 @@ body {
     font-size: 2rem;
 }
 
+#input.small-font {
+    font-size: 1.5rem;
+}
+
 #tmp {
     position: absolute;
     right: 15px;
