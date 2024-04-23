@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div id="container">
+        <h1>SIGN UP</h1>
+        <hr>
+
+        <form id="sign_up_form">
+            <input type="text" id="first_name" name="first_name" placeholder="First Name">
+
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+
+            <input type="email" id="email" name="email" placeholder="Email"
+                   required>
+
+            <input type="tel" id="phone" name="phone" placeholder="Phone number" pattern="^0[0-9]{9}$" required>
+
+            <input type="password" id="pwd" name="pwd" placeholder="Enter password" pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{5,15}$" required>
+            <!--                5 < length < 15, at least 1 cap 1 num, no special-->
+
+            <input type="password" id="repeat_pwd" placeholder="Re-enter password" pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{5,15}$" required>
+
+            <div class="policy_pane">
+                <input type="checkbox" id="policy" name="agreed" value="1" required>
+                <label for="policy">I agree to the <a href="#">Terms of Service and Private Policy</a>.</label>
+            </div>
+
+            <button type="submit" class="sign_up_btn">Sign Up</button>
+        </form>
+
+        <div class="sign_in">
+            <p>Already have an account? <a href="#">Sign In</a></p>
+        </div>
+    </div>
+</body>
+</html>
