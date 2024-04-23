@@ -18,6 +18,10 @@ document.querySelectorAll(".number").forEach((element) => {
     element.addEventListener("click", () => {
         if(input.innerText.length > 15)
             return alert("ERROR");
+
+        else if (input.innerText === "NO DISPLAY")
+            input.innerText = element.innerText;
+
         else
             input.innerText += element.innerText;
     });
@@ -60,6 +64,11 @@ document.querySelectorAll(".operator").forEach((element) => {
 document.getElementById("equal").addEventListener("click", () => {
     if(input.innerText){
         input.innerText = eval(tmp.innerText + input.innerText);
+        if(input.innerText.length > 15)
+            input.classList.add("small-font")
+        else
+            input.classList.remove("small-font")
+
         empty(tmp);
     }
 });
