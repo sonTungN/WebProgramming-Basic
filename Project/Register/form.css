@@ -2,13 +2,14 @@
     box-sizing: border-box;
     font-family: "Roboto Mono", monospace;
     font-style: normal;
+    padding: 0;
+    margin: 0;
+    user-select: none;
 }
 
 html, body {
     width: 100%;
     height: 100%;
-    padding: 0;
-    margin: 0;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 
 h1 {
     display: inline-block;
-    /*margin-top: 20px;*/
+    margin-top: 20px;
     font-weight: 700;
     background: linear-gradient(to right, #708F96, #364649);
     background-clip: text;
@@ -31,19 +32,18 @@ h1 {
     width: calc(60%);
     min-width: 400px;
     max-width: 480px;
-
     border-radius: 15px;
     text-align: center;
-
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
-form#sign_up_form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#container p {
+    margin-top: 30px;
+}
+
+.switch_pane {
+    margin: 10px auto;
 }
 
 .switch {
@@ -79,7 +79,6 @@ form#sign_up_form {
     height: 39px;
     left: 6px;
     bottom: 6px;
-    /*background: rgba(192, 192, 192, 0.7);*/
     background: linear-gradient(to left, #E0D8CC, #d28323);
     transition: 0.4s;
 }
@@ -106,9 +105,29 @@ input:focus, input:active, button:focus, button:active {
     outline: none;
 }
 
-hr {
-    border: 1px solid black;
-    width: 80%;
+.divider {
+    display: flex;
+    text-align: center;
+}
+
+.divider hr {
+    flex-grow: 1;
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 10px 25px;
+}
+
+.divider span {
+    white-space: nowrap;
+}
+
+form#sign_up_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px auto 25px;
 }
 
 form input {
@@ -138,24 +157,20 @@ form input {
     margin: 5px 8px 0 0;
 }
 
+label[for="policy"] a {
+    text-decoration: none;
+}
+
 button.sign_up_btn {
     width: 80%;
     margin: 16px auto 0;
     padding: 10px;
     border-radius: 20px;
-    /*line-height: 1.2rem;*/
-
     box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 button.sign_up_btn:hover {
     background-color: #E2DCCD;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.6);
     font-weight: 700;
 }
-
-.sign_in {
-    /*margin-bottom: 30px;*/
-}
-

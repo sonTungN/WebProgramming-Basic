@@ -12,13 +12,20 @@
 <body>
     <div id="container">
         <h1>SIGN UP</h1>
-        <div>
+        <p>Already have an account? Switch here</p>
+
+        <div class="switch_pane">
             <label class="switch">
                 <input type="checkbox" id="switch">
                 <span class="slider round"></span>
             </label>
         </div>
-        <hr>
+
+        <div class="divider">
+            <hr>
+            <span>Or Continue with</span>
+            <hr>
+        </div>
 
         <form id="sign_up_form">
             <input type="text" id="first_name" name="first_name" placeholder="First Name">
@@ -41,13 +48,6 @@
 
             <button type="submit" class="sign_up_btn">Sign Up</button>
         </form>
-
-        <div class="sign_in">
-            <p>Already have an account? <a href="#">Sign In</a></p>
-        </div>
-
-
-
     </div>
 </body>
 </html>
