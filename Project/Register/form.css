@@ -66,8 +66,8 @@ form#sign_up_form {
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
     transition: 0.4s;
+    font-weight: 600;
 }
 
 .slider:before {
@@ -79,12 +79,13 @@ form#sign_up_form {
     height: 39px;
     left: 6px;
     bottom: 6px;
-    background: white;
+    /*background: rgba(192, 192, 192, 0.7);*/
+    background: linear-gradient(to left, #E0D8CC, #d28323);
     transition: 0.4s;
 }
 
 .slider {
-    background: lightgrey;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .slider.round, input#switch{
@@ -97,11 +98,17 @@ form#sign_up_form {
 
 input:checked + .slider:before {
     transform: translateX(97px);
+    background: linear-gradient(to right, #E0D8CC, #d28323);
     content: "LOG IN";
 }
 
 input:focus, input:active, button:focus, button:active {
     outline: none;
+}
+
+hr {
+    border: 1px solid black;
+    width: 80%;
 }
 
 form input {
